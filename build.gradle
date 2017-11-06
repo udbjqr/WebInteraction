@@ -1,0 +1,27 @@
+plugins {
+	id "org.jetbrains.kotlin.jvm" version "1.1.51"
+}
+group 'zym'
+version '1.0'
+
+apply plugin: 'kotlin'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+	maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.jetbrains.kotlin:kotlin-stdlib-jre8'
+	compile 'com.alibaba:fastjson:+'
+	compile 'org.apache.logging.log4j:log4j-api:2.+'
+	compile 'org.apache.logging.log4j:log4j-core:2.+'
+	compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:+'
+	compile project(':DBHelper')
+	providedCompile 'javax.servlet:javax.servlet-api:3.+'
+	testCompile "junit:junit:4.+"
+
+}
