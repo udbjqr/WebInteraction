@@ -23,5 +23,4 @@ dependencies {
 	compile project(':DBHelper')
 	providedCompile 'javax.servlet:javax.servlet-api:3.+'
 	testCompile "junit:junit:4.+"
-
 }

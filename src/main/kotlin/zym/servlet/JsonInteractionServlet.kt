@@ -25,7 +25,7 @@ abstract class JsonInteractionServlet:BaseServlet() {
 	 * 向前端发送一个错误信息,此信息将直接使用http的错误代码,如200 ,304,404,504等。
 	 * 建议此代码以1000起步。
 	 */
-	fun sendError(id:Int,message:String){
-		TODO("这里需要一个共享的Response对象。")
-	}
+//	fun sendError(id:Int,message:String){
+//		TODO("这里需要一个共享的Response对象。")
+//	}
 }
